@@ -40,9 +40,9 @@ extension ActionPrediction {
     /// Defines placeholder prediction labels beyond the scope of the
     /// action classifier model.
     private enum AppLabel: String {
-        case starting = "Starting Up"
-        case noPerson = "No Person"
-        case lowConfidence = "Low Confidence"
+        case starting = "   "
+        case noPerson = " "
+        case lowConfidence = "  "
     }
 
     /// A prediction that represents a time window that doesn't contain

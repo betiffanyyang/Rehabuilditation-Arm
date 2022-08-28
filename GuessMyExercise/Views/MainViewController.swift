@@ -214,7 +214,7 @@ extension MainViewController {
         DispatchQueue.main.async { self.actionLabel.text = prediction.label }
 
         // Update the UI's confidence label on the main thread.
-        let confidenceString = prediction.confidenceString ?? "Observing..."
+        let confidenceString = prediction.confidenceString ?? "    "
         DispatchQueue.main.async { self.confidenceLabel.text = confidenceString }
     }
 

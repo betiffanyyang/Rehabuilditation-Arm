@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RL8-OA-yUh">
     <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -11,10 +12,351 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="CKg-nP-qrK">
+            <objects>
+                <viewController id="48F-eu-Kx2" customClass="HomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jqz-TD-xsX"/>
+                        <viewControllerLayoutGuide type="bottom" id="UxV-MP-YDu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lmt-OD-6T7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1k-4D-rEb">
+                                <rect key="frame" x="16" y="52" width="70" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="←">
+                                    <fontDescription key="titleFontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="60"/>
+                                    <color key="baseForegroundColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8D-M9-GJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3175" y="-116"/>
+        </scene>
+        <!--Body Select View Controller-->
+        <scene sceneID="5OZ-EP-opj">
+            <objects>
+                <viewController storyboardIdentifier="BodySelectViewController" modalPresentationStyle="fullScreen" id="RL8-OA-yUh" customClass="BodySelectViewController" customModule="Guess_My_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hkz-DY-1cO"/>
+                        <viewControllerLayoutGuide type="bottom" id="hIP-dX-TB0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uGH-Qy-MOg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled design (22)" translatesAutoresizingMaskIntoConstraints="NO" id="xN6-D8-Dos">
+                                <rect key="frame" x="-160" y="52" width="571" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGO HERE (4)" translatesAutoresizingMaskIntoConstraints="NO" id="Eaw-r7-xBd">
+                                <rect key="frame" x="-92" y="715" width="605" height="372"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WL-bP-HOI">
+                                <rect key="frame" x="60" y="634" width="254" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.12791256619999999" green="0.12791256619999999" blue="0.12791256619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.97254901960784312" green="0.67843137254901964" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dHb-U5-6UA" kind="show" id="7DU-hj-1kf"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home__2_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="oPk-NQ-Ojm">
+                                <rect key="frame" x="70" y="751" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hamburger-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="3hj-nJ-76h">
+                                <rect key="frame" x="9" y="756" width="80" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chart-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="tUa-d4-zLg">
+                                <rect key="frame" x="288" y="753" width="71" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="export" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-QL-Qid">
+                                <rect key="frame" x="106" y="365" width="207" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_design__19_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-wM-2nw">
+                                <rect key="frame" x="84" y="242" width="116" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Untitled_design__20_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="VJV-U5-jwg">
+                                <rect key="frame" x="204" y="248" width="43" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="export(8)" translatesAutoresizingMaskIntoConstraints="NO" id="joc-kn-ubj">
+                                <rect key="frame" x="90" y="384" width="187" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="export(1)" translatesAutoresizingMaskIntoConstraints="NO" id="jyb-u2-W2i">
+                                <rect key="frame" x="111" y="238" width="144" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="export(7)" translatesAutoresizingMaskIntoConstraints="NO" id="t4u-X9-bv3">
+                                <rect key="frame" x="109" y="286" width="196" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="export(2)" translatesAutoresizingMaskIntoConstraints="NO" id="fnP-qO-YOj">
+                                <rect key="frame" x="51" y="278" width="269" height="161"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="export(5)" translatesAutoresizingMaskIntoConstraints="NO" id="Zua-ve-yoe">
+                                <rect key="frame" x="104" y="389" width="159" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bodyodiodiodi-removebg-preview (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Mom-c6-pth">
+                                <rect key="frame" x="29" y="168" width="317" height="458"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Front Arm Raises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-IG-AQv">
+                                <rect key="frame" x="87" y="125" width="129" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="17"/>
+                                <color key="textColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrist Flexions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m9-xd-lIz">
+                                <rect key="frame" x="88" y="125" width="108" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="17"/>
+                                <color key="textColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shoulders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJd-rl-K7b">
+                                <rect key="frame" x="80" y="82" width="160" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="35"/>
+                                <color key="textColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forearms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFg-oB-1fR">
+                                <rect key="frame" x="81" y="81" width="150" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="35"/>
+                                <color key="textColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6X-5A-uCL">
+                                <rect key="frame" x="119" y="249" width="32" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="shoulderButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="opS-wu-EOn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-cb-ogw">
+                                <rect key="frame" x="162" y="392" width="47" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="innerThighButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="Pwx-HV-BkP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zC3-Wx-OtF">
+                                <rect key="frame" x="241" y="326" width="44" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="forearmButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="V3W-ws-JNp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoK-Bl-UEu">
+                                <rect key="frame" x="183" y="263" width="48" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="chestButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="Nr1-v7-yPx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tNM-WD-n85">
+                                <rect key="frame" x="135" y="325" width="33" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sidesButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="Tb9-Xg-rAd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7m-Ve-Nqd">
+                                <rect key="frame" x="215" y="419" width="32" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sideThighButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="Aha-V5-G12"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKy-Tr-6US">
+                                <rect key="frame" x="0.0" y="541" width="39" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="no">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="topThigh:" destination="RL8-OA-yUh" eventType="touchUpInside" id="OI5-qn-gQc"/>
+                                    <action selector="topThighButton:" destination="RL8-OA-yUh" eventType="touchUpInside" id="5jM-5g-sWV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0e-7Q-clL">
+                                <rect key="frame" x="80" y="82" width="131" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="35"/>
+                                <color key="textColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTU-NU-tkn">
+                                <rect key="frame" x="290" y="756" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="ZxK-3e-9v5" kind="show" id="Pa8-yh-Bih"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96005402969999998" green="0.96005402969999998" blue="0.96005402969999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xS4-XN-WDq"/>
+                    <connections>
+                        <outlet property="chest" destination="jyb-u2-W2i" id="8OJ-Vj-pam"/>
+                        <outlet property="exerciseLabel" destination="M0e-7Q-clL" id="Cxq-5q-qsn"/>
+                        <outlet property="forearmExercise" destination="6m9-xd-lIz" id="Y0v-AB-P7L"/>
+                        <outlet property="forearmLabel" destination="ZFg-oB-1fR" id="Sp8-di-XWj"/>
+                        <outlet property="forearms" destination="fnP-qO-YOj" id="X54-8q-bOo"/>
+                        <outlet property="innerThigh" destination="fe7-QL-Qid" id="MqL-Lf-3eE"/>
+                        <outlet property="leftShoulder" destination="9vo-wM-2nw" id="fxx-di-pYh"/>
+                        <outlet property="nextButton" destination="4WL-bP-HOI" id="mZZ-v5-YYT"/>
+                        <outlet property="rightShoulder" destination="VJV-U5-jwg" id="ZUx-61-esF"/>
+                        <outlet property="shoulderExercise" destination="Uhh-IG-AQv" id="QfD-aP-XDg"/>
+                        <outlet property="shoulderLabel" destination="EJd-rl-K7b" id="UnS-ak-pyi"/>
+                        <outlet property="sideThigh" destination="Zua-ve-yoe" id="yQf-ZM-7Yq"/>
+                        <outlet property="sides" destination="t4u-X9-bv3" id="YIW-t4-UG2"/>
+                        <outlet property="topThigh" destination="joc-kn-ubj" id="t5e-7e-lqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfh-UP-dPF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1735.2" y="-123.39901477832512"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ID7-Yg-Pqf">
+            <objects>
+                <viewController id="dHb-U5-6UA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tP4-eu-bSv"/>
+                        <viewControllerLayoutGuide type="bottom" id="eit-zK-aOW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t67-cX-Ves">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white part 2 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="611-wD-YJd">
+                                <rect key="frame" x="13" y="64" width="338" height="626"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white part 2 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="94u-mh-5e2">
+                                <rect key="frame" x="23" y="74" width="338" height="626"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rec-Hj-RUT">
+                                <rect key="frame" x="106" y="110" width="166" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Medium" family="Kohinoor Telugu" pointSize="30"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9O-c7-7S3">
+                                <rect key="frame" x="32" y="160" width="304" height="364"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Raise your arms up in front of you at a 90° angle.
+Hold for a few seconds and slowly lower your arms.
+
+Read the feedback at the bottom of the screen and adjust accordingly.
+</string>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="25"/>
+                                <color key="textColor" red="0.1764705882" green="0.1764705882" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRl-YC-HXI">
+                                <rect key="frame" x="57" y="532" width="254" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Begin">
+                                    <fontDescription key="titleFontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.12791256619999999" green="0.12791256619999999" blue="0.12791256619999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.97287768129999996" green="0.67689764500000005" blue="0.43599325420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ePY-ag-Cp1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-EJ-TzJ">
+                                <rect key="frame" x="13" y="44" width="70" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="←">
+                                    <fontDescription key="titleFontDescription" name="KohinoorTelugu-Light" family="Kohinoor Telugu" pointSize="60"/>
+                                    <color key="baseForegroundColor" red="0.17723390459999999" green="0.17723390459999999" blue="0.17723390459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="RL8-OA-yUh" kind="show" id="jY5-Na-tfZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Copy_of_Rebuild-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="wZm-fz-9Tl">
+                                <rect key="frame" x="248" y="0.0" width="127" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RE__1_-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="Qak-3F-U6M">
+                                <rect key="frame" x="254" y="19" width="31" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97287768129999996" green="0.67689764500000005" blue="0.43599325420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mil-H0-Qa4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lwb-Gg-JcY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863.20000000000005" y="-116.00985221674877"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Guess_My_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="MainViewController" customModule="Guess_My_Exercise" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F1z-cx-652"/>
                         <viewControllerLayoutGuide type="bottom" id="zt5-5N-S1k"/>
@@ -27,19 +369,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" axis="vertical" alignment="center" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qXp-yJ-YAz">
-                                <rect key="frame" x="106.33333333333333" y="666.66666666666663" width="162.66666666666669" height="91.333333333333371"/>
+                                <rect key="frame" x="101.66666666666669" y="652.33333333333337" width="172" height="105.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTN-IC-lyf">
-                                        <rect key="frame" x="8" y="8" width="146.66666666666666" height="40.666666666666664"/>
+                                        <rect key="frame" x="8" y="8" width="156" height="47.666666666666664"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <edgeInsets key="layoutMargins" top="8" left="10" bottom="8" right="10"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="34"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confidence" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKf-l4-vE3">
-                                        <rect key="frame" x="8" y="49.666666666666742" width="146.66666666666666" height="33.666666666666657"/>
+                                        <rect key="frame" x="8" y="58.333333333333258" width="156" height="39.333333333333343"/>
                                         <color key="tintColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -50,7 +392,7 @@
                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rqv-3I-Dlz">
-                                <rect key="frame" x="20" y="52" width="210" height="66"/>
+                                <rect key="frame" x="20" y="52" width="203" height="66"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtZ-RJ-x8n" userLabel="CameraButton">
                                         <rect key="frame" x="8" y="8" width="50" height="50"/>
@@ -70,12 +412,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenDisabled="NO" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="mEB-Uu-gJu">
-                                        <rect key="frame" x="66" y="8" width="136" height="50"/>
+                                        <rect key="frame" x="66" y="8" width="129" height="50"/>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.75" height="1"/>
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
-                                        <state key="normal" title="Summary">
+                                        <state key="normal" title="Progress">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
                                         <connections>
@@ -83,7 +425,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" name="Button Stack Background"/>
+                                <color key="backgroundColor" red="0.97287768129999996" green="0.67689764500000005" blue="0.43599325420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="mEB-Uu-gJu" firstAttribute="height" secondItem="BtZ-RJ-x8n" secondAttribute="height" priority="750" id="4qN-8b-09q"/>
                                     <constraint firstItem="BtZ-RJ-x8n" firstAttribute="leading" secondItem="rqv-3I-Dlz" secondAttribute="leading" priority="997" constant="10" id="svQ-28-h3N"/>
@@ -103,6 +445,7 @@
                             <constraint firstItem="ArZ-44-lD1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cS2-Fd-Uy3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="L2R-1i-8vw"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="actionLabel" destination="JTN-IC-lyf" id="SbF-cS-OeZ"/>
@@ -127,31 +470,31 @@
                         <viewControllerLayoutGuide type="bottom" id="Ejg-ot-373"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hWJ-z1-WE2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="k8c-rX-gWH">
-                                <rect key="frame" x="0.0" y="124" width="375" height="654"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="634"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <color key="separatorColor" systemColor="separatorColor"/>
                                 <color key="sectionIndexBackgroundColor" systemColor="secondarySystemFillColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SummaryCellPrototype" rowHeight="78" id="78g-NB-8OO" userLabel="SummaryCellPrototype" customClass="SummaryTableViewCell" customModule="Guess_My_Exercise" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="78"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="78g-NB-8OO" id="bx9-Gx-dxo">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="78"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumping Jacks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESq-O0-1Kx" userLabel="Action Label">
-                                                    <rect key="frame" x="20" y="19.666666666666671" width="181" height="39"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                    <rect key="frame" x="20" y="19.666666666666671" width="181.66666666666666" height="39"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.6s" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWu-SU-KYd" userLabel="TimeTicker Label">
-                                                    <rect key="frame" x="300" y="22.666666666666671" width="55" height="33"/>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                    <color key="textColor" systemColor="systemOrangeColor"/>
+                                                    <rect key="frame" x="307.33333333333331" y="19.333333333333332" width="47.666666666666686" height="39.333333333333343"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="28"/>
+                                                    <color key="textColor" red="0.97287768129999996" green="0.67689764500000005" blue="0.43599325420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -172,9 +515,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC6-n8-4tm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FC6-n8-4tm">
                                 <rect key="frame" x="121" y="64" width="132" height="38"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="31"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -191,6 +534,7 @@
                             <constraint firstItem="FC6-n8-4tm" firstAttribute="top" secondItem="Znf-Jh-SDj" secondAttribute="top" constant="20" id="hud-qT-tNu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sy4-T3-API"/>
                     <connections>
                         <outlet property="tableView" destination="k8c-rX-gWH" id="xgT-bt-72f"/>
                     </connections>
@@ -201,10 +545,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Copy_of_Rebuild-removebg-preview" width="666" height="374"/>
+        <image name="LOGO HERE (4)" width="1640" height="924"/>
+        <image name="RE__1_-removebg-preview" width="500" height="500"/>
+        <image name="Untitled design (22)" width="2000" height="300"/>
+        <image name="Untitled_design__19_-removebg-preview" width="500" height="500"/>
+        <image name="Untitled_design__20_-removebg-preview" width="500" height="500"/>
         <image name="arrow.triangle.2.circlepath.camera.fill" catalog="system" width="128" height="94"/>
-        <namedColor name="Button Stack Background">
-            <color red="0.5" green="0.5" blue="0.5" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="bodyodiodiodi-removebg-preview (1)" width="259" height="427"/>
+        <image name="chart-removebg-preview" width="500" height="500"/>
+        <image name="export" width="3844" height="2976"/>
+        <image name="export(1)" width="3844" height="2976"/>
+        <image name="export(2)" width="3844" height="2976"/>
+        <image name="export(5)" width="3844" height="2976"/>
+        <image name="export(7)" width="3844" height="2976"/>
+        <image name="export(8)" width="3844" height="2976"/>
+        <image name="hamburger-removebg-preview" width="500" height="500"/>
+        <image name="home__2_-removebg-preview" width="500" height="500"/>
+        <image name="white part 2 (1)" width="564" height="960"/>
         <namedColor name="Label Stack Background">
             <color red="1" green="1" blue="1" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -225,9 +583,6 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

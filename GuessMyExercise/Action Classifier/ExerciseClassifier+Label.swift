@@ -5,15 +5,12 @@ Abstract:
 Defines the app's knowledge of the model's class labels.
 */
 
-extension ExerciseClassifier {
+extension TArmActionClassifier {
     /// Represents the app's knowledge of the Exercise Classifier model's labels.
     enum Label: String, CaseIterable {
-        case lunges = "Lunges"
-        case burpees = "Burpees"
-        case jumpingJacks = "Jumping Jacks"
-
-        /// A negative class that represents irrelevant actions.
-        case otherAction = "Other Action"
+        case almost = "Almost"
+        case good = "Good"
+        case undetected = "Undetected"
 
         /// Creates a label from a string.
         /// - Parameter label: The name of an action class.

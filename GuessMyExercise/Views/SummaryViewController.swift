@@ -69,7 +69,7 @@ extension SummaryViewController: UITableViewDataSource {
         }
 
         if let frameCounts = actionFrameCounts {
-            let frameRate = ExerciseClassifier.frameRate
+            let frameRate = TArmActionClassifier.frameRate
 
             let action = sortedActions[indexPath.row]
             let totalFrames = frameCounts[action] ?? 0
